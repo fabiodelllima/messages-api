@@ -16,3 +16,14 @@ interface IMessageUpdateData {
 }
  */
 
+export interface IField {
+  key: string;
+  required?: boolean;
+  min?: number;
+  max?: number;
+  regex?: {
+    expression: RegExp;
+    message: string;
+  };
+  type?: string;
+}
