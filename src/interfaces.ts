@@ -5,3 +5,14 @@ interface IMessage {
   createdAt: Date;
 }
 
+export type TMessageUpdateData = Partial<
+  Pick<IMessage, 'title' | 'content'>
+>;
+
+/* 
+interface IMessageUpdateData {
+  title?: string;
+  content?: string;
+}
+ */
+
