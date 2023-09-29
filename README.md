@@ -1,1 +1,1 @@
-# postgres-api
+# messages-api
